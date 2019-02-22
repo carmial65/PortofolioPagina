@@ -1,0 +1,255 @@
+/*General*/
+
+#main-header {
+	background: #000000;
+	color: white;
+	height: 150px;
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+	#main-header a {
+			font-family: Myriad Pro, Helvetica;
+			text-decoration: none;
+			font-size: 50%;
+			color: #FFFFFF;
+			
+	}
+ 
+/* Logo */
+#logo-header {
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	width: 100px;
+    height: 100px;
+	text-decoration: none;
+
+}
+	
+ 
+/* Navegación */
+nav {
+	float: right;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+	
+		nav ul li {
+			margin-top: 10%;
+			display: inline-block;
+			line-height: 80px;
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 0 10px;
+				text-decoration: none;
+			}
+			nav ul li a:hover {
+					background: #53B5FF;
+				}
+
+h2 {font-family: Gunny Rewritten, Helvetica;}
+
+p {font-family:Myriad Pro, Helvetica;
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-top: 10%;
+	margin-bottom: 0%}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Gunny Rewritten, Helvetica, Arial, sans-serif;
+	color: #000000;
+	background-image: url("");
+	background-repeat: no-repeat, repeat;
+    background-color: #53B5FF;
+	font-size: 3em;
+	line-height: 1.5em;
+	padding-top: 105px; /* Relleno superior igual a la altura de la cabecera*/
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+	
+/* Home */	
+#home {	
+	background: #000000;
+	font-family:Beauty and the Beast,Myriad Pro, Helvetica;
+	color: #FFFFFF;
+	font-size: 2em;
+}
+
+	#home ul li {
+		display: inline-block;
+	}
+		
+		#home ul li a {
+			margin-top: 20%;
+			margin-right: 20%;
+			text-decoration: none;
+			color: #FFFFFF;
+		}	
+
+
+/*Portofolio*/	
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #000000;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* About me */	
+#texto { 	background: #FFFFFF;
+			float:left;
+			width:50%;
+			margin-left: 25%;
+			margin-top: 15%;
+			height: 400px;
+			font-size: 0.5em;
+}
+#nombre{
+  width: 75%;
+  padding: 10px 0;
+  color: #000000;
+  font-family:Beauty and the Beast,Myriad Pro, Helvetica;
+  -webkit-transform: translate(-25%, 50%) rotate(-45deg);
+  -moz-transform: translate(-25%, 50%) rotate(-45deg);
+  transform: translate(15%, -10%) rotate(-45deg);
+}
+
+#imagen { 	float:right; 
+			width:25%;
+			margin-top: 5%;}
+
+#video1 { float:left}
+
+#video2 { float:right}
+
+/* Contact */	
+#formulario {
+  margin-left: 5%;
+  margin-top: 5%;
+  float: left;
+}
+#formulario div label {
+  width: 30%;
+  float: left;
+}
+
+#redes{
+	margin-right: 5%;
+	margin-top: 1%;
+	float:right;
+}
+
+#enlaces{
+	text-align: center;
+}
+
+
+/* Portfolio */
+#contenedor{
+	overflow:hidden;
+	margin-left:22%;
+	margin-right: 22%;
+	margin-top: 20%;
+} 
+.polig{ 
+	margin-top: 5%;
+	text-align: center;
+	width:250px; 
+	height:100px; 
+	background:#000000; 
+	color: #FFFFFF;
+} 
+.polig a{ 
+	color: #FFFFFF;
+	text-decoration:none;  
+} 
+.polig a:hover{ 
+	color: #55E2FF;
+	text-decoration:none;  
+} 
+#col1{ 
+	float: left;
+    display: inline-block;
+    margin-left: 5%;
+} 
+#col2{ 
+	float: left;
+    display: inline-block;
+    margin-left: 5%;
+} 
+#col3{ 
+	float: left;
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Portofolio images*/
+#prevImages{
+	  background: #000000;
+}
+.mySlides{
+  display: none;
+  margin-top:5%;
+  margin-right: 40%;
+  margin-left: 40%;
+  width: 300px;
+  height: 300px;
+}
+#display-left{
+	position:absolute;
+	top:50%;
+	left:20%;
+	transform:translate(0%,-50%);
+	-ms-transform:translate(-0%,-50%)
+}
+#display-right{
+	position:absolute;
+	top:50%;
+	right:20%;
+	transform:translate(0%,-50%);
+	-ms-transform:translate(0%,-50%)
+}
+#display-close{
+	color: #FFFFFF;
+	text-decoration:none;  
+	font-size: 0.5em;
+	position:absolute;
+	top:5%;
+	right:20%;
+}

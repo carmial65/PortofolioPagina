@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portfolio</title>
+<link rel="stylesheet" type="text/css" href="../../Estilo.css"/>
+</head>
+
+<body id="prevImages">
+	<a id="display-close" href="../Portfolio.html"> X </a>
+	<video class="mySlides" controls>
+  				<source src="Videos/trailer_Carlota_de_Miguel.mp4" type="video/mp4">
+</video>
+    
+    <video class="mySlides" controls>
+  				<source src="Videos/Juego.mp4" type="video/mp4">
+	</video>
+	
+<button id="display-left" onclick="plusDivs(-1)">&#10094;</button>
+	<button id="display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+		    showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+		    var i;
+		    var x = document.getElementsByClassName("mySlides");
+		    if (n > x.length) {slideIndex = 1} 
+		    if (n < 1) {slideIndex = x.length} ;
+		    for (i = 0; i < x.length; i++) {
+		        x[i].style.display = "none"; 
+		    }
+		    x[slideIndex-1].style.display = "block"; 
+		}
+	</script>
+</body>
+</html>
